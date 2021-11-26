@@ -20,6 +20,17 @@ public class DesignpatternApplication {
 		dieselCar.checkEngine();
 		hydrogenCar.checkEngine();
 		electricCar.checkEngine();
+		
+		petrolCar.fillUpTank("gpl");
+		petrolCar.fillUpTank("cng");
+		petrolCar.fillUpTank("petrol");
+		dieselCar.fillUpTank("diesel");
+		hydrogenCar.fillUpTank("hydrogen");
+		electricCar.fillUpTank("electricity");
+		electricCar.fillUpTank("");
+		
+		
+
 
 	}
 

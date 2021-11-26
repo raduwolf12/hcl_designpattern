@@ -11,7 +11,12 @@ public class ElectricCar implements Car {
 
     @Override
     public void fillUpTank(String fuel) {
-        System.out.println("CHARGING");
+        if (fuel.equalsIgnoreCase("electricity")) {
+            System.out.println("CHARGING");
+		} else {
+			System.out.println("Invalid fuel!");
+		}
+        
     }
 }
 

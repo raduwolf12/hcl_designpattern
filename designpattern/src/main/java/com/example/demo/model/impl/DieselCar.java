@@ -11,6 +11,10 @@ public class DieselCar implements Car {
 
     @Override
     public void fillUpTank(String fuel) {
-        System.out.println("DIESEL filling up");
+        if (fuel.equalsIgnoreCase("diesel")) {
+            System.out.println("DIESEL filling up");
+		} else {
+			System.out.println("Invalid fuel!");
+		}
     }
 }
