@@ -1,13 +1,26 @@
 package com.example.demo;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.example.demo.model.Car;
 
-@SpringBootApplication
 public class DesignpatternApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DesignpatternApplication.class, args);
+		AbstractCarFactory classicFactory = CarFactoryProducer.produceCarFactory("classic");
+		AbstractCarFactory ecoFactory = CarFactoryProducer.produceCarFactory("eco");
+
+		System.out.println(classicFactory);
+		System.out.println(ecoFactory);
+
+		Car petrolCar = classicFactory.getCar("petrol");
+		Car dieselCar = classicFactory.getCar("diesel");
+		Car hydrogenCar = ecoFactory.getCar("hydrogen");
+		Car electricCar = ecoFactory.getCar("electric");
+
+		petrolCar.checkEngine();
+		dieselCar.checkEngine();
+		hydrogenCar.checkEngine();
+		electricCar.checkEngine();
+
 	}
 
 }
