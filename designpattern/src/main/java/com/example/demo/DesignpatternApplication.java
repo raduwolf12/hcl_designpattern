@@ -28,9 +28,6 @@ public class DesignpatternApplication {
 		hydrogenCar.fillUpTank("hydrogen");
 		electricCar.fillUpTank("electricity");
 		electricCar.fillUpTank("");
-		
-		
-
 
 	}
 

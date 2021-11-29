@@ -16,14 +16,10 @@ public class PetrolCar implements Car {
 
 		if (fuel.equalsIgnoreCase("petrol")) {
 			System.out.println("PETROL filling up");
-		}
-
-		else if (fuel.equalsIgnoreCase("gpl") || fuel.equalsIgnoreCase("cng")) {
+		} else if (fuel.equalsIgnoreCase("gpl") || fuel.equalsIgnoreCase("cng")) {
 			engineAdapter = new EngineAdapter(fuel);
 			engineAdapter.fillUpTank(fuel);
-		}
-
-		else {
+		} else {
 			System.out.println("Invalid fuel!");
 		}
 

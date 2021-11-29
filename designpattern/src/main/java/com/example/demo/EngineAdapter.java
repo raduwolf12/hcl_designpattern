@@ -12,17 +12,15 @@ public class EngineAdapter implements Car {
 	   public EngineAdapter(String fuel){
 	   
 	      if(fuel.equalsIgnoreCase("gpl") ){
-	    	  gasEngine = new GplEngine();			
-	         
-	      }else if (fuel.equalsIgnoreCase("cng")){
+	    	  gasEngine = new GplEngine();
+	      } else if (fuel.equalsIgnoreCase("cng")){
 	    	  gasEngine = new CngEngine();
 	      }	
 	   }
 
-
 	@Override
 	public void fillUpTank(String fuel) {
-		if(fuel.equalsIgnoreCase("gpl") ){
+		if (fuel.equalsIgnoreCase("gpl") ){
 	    	  gasEngine.fillUpGas();			
 	         
 	      }else if (fuel.equalsIgnoreCase("cng")){
