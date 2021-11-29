@@ -12,14 +12,9 @@ public class Thread2 extends Thread {
 
 	@Override
 	public void run() {
-//		try {
 		for (int i = 1; i <= 100; i++) {
 			System.out.println("Thread2: " + i);
-//				Thread.sleep(1000);
 		}
-//		} catch (InterruptedException e) {
-//			System.out.println("Thread1 interrupted");
-//		}
 	}
 
 }
