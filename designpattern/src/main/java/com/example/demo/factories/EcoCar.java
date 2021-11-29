@@ -6,16 +6,25 @@ import com.example.demo.model.impl.ElectricCar;
 import com.example.demo.model.impl.HydrogenCar;
 import lombok.Data;
 
+/**
+ * The Class EcoCar.
+ */
 @Data
 public class EcoCar extends AbstractCarFactory {
 
-    @Override
-    public Car getCar(String string) {
-        if("hydrogen".equals(string)) {
-            return new HydrogenCar();
-        } else if ("electric".equals(string)) {
-            return new ElectricCar();
-        }
-        return null;
-    }
+	/**
+	 * Gets the car.
+	 *
+	 * @param string the string
+	 * @return the car
+	 */
+	@Override
+	public Car getCar(String string) {
+		if ("hydrogen".equals(string)) {
+			return new HydrogenCar();
+		} else if ("electric".equals(string)) {
+			return new ElectricCar();
+		}
+		return null;
+	}
 }

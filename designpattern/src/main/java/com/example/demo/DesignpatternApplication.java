@@ -2,8 +2,16 @@ package com.example.demo;
 
 import com.example.demo.model.Car;
 
+/**
+ * The Class DesignpatternApplication.
+ */
 public class DesignpatternApplication {
 
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 */
 	public static void main(String[] args) {
 		AbstractCarFactory classicFactory = CarFactoryProducer.produceCarFactory("classic");
 		AbstractCarFactory ecoFactory = CarFactoryProducer.produceCarFactory("eco");
@@ -20,7 +28,7 @@ public class DesignpatternApplication {
 		dieselCar.checkEngine();
 		hydrogenCar.checkEngine();
 		electricCar.checkEngine();
-		
+
 		petrolCar.fillUpTank("gpl");
 		petrolCar.fillUpTank("cng");
 		petrolCar.fillUpTank("petrol");
@@ -28,9 +36,6 @@ public class DesignpatternApplication {
 		hydrogenCar.fillUpTank("hydrogen");
 		electricCar.fillUpTank("electricity");
 		electricCar.fillUpTank("");
-		
-		
-
 
 	}
 

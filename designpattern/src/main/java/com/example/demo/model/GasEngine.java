@@ -1,5 +1,12 @@
 package com.example.demo.model;
 
+/**
+ * The Interface GasEngine.
+ */
 public interface GasEngine {
-    void fillUpGas();  //TODO
+
+	/**
+	 * Fill up gas.
+	 */
+	void fillUpGas();
 }

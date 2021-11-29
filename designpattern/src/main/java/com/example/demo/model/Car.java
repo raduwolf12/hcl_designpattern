@@ -1,6 +1,19 @@
 package com.example.demo.model;
 
+/**
+ * The Interface Car.
+ */
 public interface Car {
-    void checkEngine();
-    void fillUpTank(String fuel);
+
+	/**
+	 * Check engine.
+	 */
+	void checkEngine();
+
+	/**
+	 * Fill up tank.
+	 *
+	 * @param fuel the fuel
+	 */
+	void fillUpTank(String fuel);
 }

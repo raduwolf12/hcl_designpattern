@@ -6,16 +6,25 @@ import com.example.demo.model.impl.DieselCar;
 import com.example.demo.model.impl.PetrolCar;
 import lombok.Data;
 
+/**
+ * The Class ClassicCar.
+ */
 @Data
 public class ClassicCar extends AbstractCarFactory {
 
-    @Override
-    public Car getCar(String string) {
-        if("diesel".equals(string)) {
-            return new DieselCar();
-        } else if ("petrol".equals(string)) {
-            return new PetrolCar();
-        }
-        return null;
-    }
+	/**
+	 * Gets the car.
+	 *
+	 * @param string the string
+	 * @return the car
+	 */
+	@Override
+	public Car getCar(String string) {
+		if ("diesel".equals(string)) {
+			return new DieselCar();
+		} else if ("petrol".equals(string)) {
+			return new PetrolCar();
+		}
+		return null;
+	}
 }
