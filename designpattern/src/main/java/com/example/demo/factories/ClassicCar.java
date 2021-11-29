@@ -7,7 +7,7 @@ import com.example.demo.model.impl.PetrolCar;
 import lombok.Data;
 
 /**
- * The Class ClassicCar.
+ * The Class ClassicCar is a Factory.
  */
 @Data
 public class ClassicCar extends AbstractCarFactory {

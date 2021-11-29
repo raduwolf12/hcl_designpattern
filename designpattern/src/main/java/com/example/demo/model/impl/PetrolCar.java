@@ -8,7 +8,10 @@ import com.example.demo.model.Car;
  */
 public class PetrolCar implements Car {
 
-	/** The engine adapter. */
+	/**
+	 * The engine adapter. We use this class to take the method from the GasEngine
+	 * interface.
+	 */
 	EngineAdapter engineAdapter;
 
 	/**
@@ -20,7 +23,8 @@ public class PetrolCar implements Car {
 	}
 
 	/**
-	 * Fill up tank.
+	 * Fill up tank. This method is using the engine adapter to execute the
+	 * fillUpTank function based on cng or gpl.
 	 *
 	 * @param fuel the fuel
 	 */

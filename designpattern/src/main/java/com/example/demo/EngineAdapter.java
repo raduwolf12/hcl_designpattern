@@ -10,7 +10,10 @@ import com.example.demo.model.impl.GplEngine;
  */
 public class EngineAdapter implements Car {
 
-	/** The gas engine. */
+	/**
+	 * The gas engine. This variable is used to store either the class GplEngine or
+	 * the class CngEngine
+	 */
 	GasEngine gasEngine;
 
 	/**
@@ -29,8 +32,8 @@ public class EngineAdapter implements Car {
 	}
 
 	/**
-	 * Fill up tank.
-	 *
+	 * Fill up tank. This is the method we use to fill up the tank.
+	 * 
 	 * @param fuel the fuel
 	 */
 	@Override
