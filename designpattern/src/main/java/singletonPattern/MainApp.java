@@ -1,7 +1,15 @@
 package singletonPattern;
 
+/**
+ * The Class MainApp.
+ */
 public class MainApp {
 
+	/**
+	 * The main method.
+	 *
+	 * @param args the arguments
+	 */
 	public static void main(String[] args) {
 		Thread t1 = Thread1.getInstance();
 		Thread t2 = Thread2.getInstance();
